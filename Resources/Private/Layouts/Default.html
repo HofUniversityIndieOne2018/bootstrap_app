@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<div class="tx-bootstrap-app">
+        <div class="panel">
+            <ul>
+                <li>
+                    <f:link.action controller="Location" action="list" pluginName="information">
+                        Locations
+                    </f:link.action>
+                </li>
+                <li>
+                    <f:link.action controller="Session" action="list" pluginName="information">
+                        Sessions
+                    </f:link.action>
+                </li>
+                <li>
+                    <f:link.action controller="Speaker" action="list" pluginName="information">
+                        Speakers
+                    </f:link.action>
+                </li>
+            </ul>
+        </div>
+
+		<f:render section="content" />
+	</div>
+</html>

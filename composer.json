@@ -1,0 +1,24 @@
+{
+    "name": "hofuniversity/bootstrap-app",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HofUniversity\\BootstrapApp\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HofUniversity\\BootstrapApp\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "bootstrap_app": "self.version",
+        "typo3-ter/bootstrap-app": "self.version"
+    }
+}

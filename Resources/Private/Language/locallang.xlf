@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-11T04:09:33Z" product-name="bootstrap_app">
+		<header/>
+		<body>
+			<trans-unit id="tx_bootstrapapp_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_location.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_location.max_participants">
+				<source>Max Participants</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session">
+				<source>Session</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.start">
+				<source>Start</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.end">
+				<source>End</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_session.speakers">
+				<source>Speakers</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker">
+				<source>Speaker</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker.degree">
+				<source>Degree</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_bootstrapapp_domain_model_speaker.organization">
+				<source>Organization</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-11T04:09:33Z" product-name="bootstrap_app">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="max_participants.description">
+				<source>Max. Amount of Participants</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

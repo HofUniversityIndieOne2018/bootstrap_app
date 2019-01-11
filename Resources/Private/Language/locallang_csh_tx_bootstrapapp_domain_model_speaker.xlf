@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-11T04:09:33Z" product-name="bootstrap_app">
+		<header/>
+		<body>
+			<trans-unit id="degree.description">
+				<source>Degree</source>
+			</trans-unit>
+			<trans-unit id="first_name.description">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="organization.description">
+				<source>Organization</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for displaying a single view for a domain object
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			Show.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<h1>Single View for Location</h1>
+
+		<f:flashMessages />
+		<f:render partial="Location/Properties" arguments="{_all}" />
+
+        <div>
+            <h5>Sessions at this location</h5>
+            <ul>
+                <f:for each="{sessions}" as="session">
+                    <li>
+                        <f:link.action controller="Session" action="show"
+                                       pluginName="information"
+                                        arguments="{session:session}">
+                            {session.start -> f:format.date(format:'Y-m-d H:i')}
+                            to {session.end -> f:format.date(format:'H:i')}
+                            <strong>{session.title}</strong>
+                        </f:link.action>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+
+		<f:link.action action="list">Back to list</f:link.action><br />
+		<f:link.action action="new">New Location</f:link.action>
+	</f:section>
+</html>
