@@ -48,14 +48,13 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     }
 
     /**
-     * action list
-     * 
-     * @return void
+     * @param string $search
      */
-    public function listAction()
+    public function listAction(string $search = '')
     {
-        $locations = $this->locationRepository->findAll();
+        $locations = $this->locationRepository->findBySearchTerm($search);
         $this->view->assign('locations', $locations);
+        $this->view->assign('search', $search);
     }
 
     /**

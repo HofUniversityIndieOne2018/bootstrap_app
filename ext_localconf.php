@@ -15,9 +15,9 @@ call_user_func(
             ],
             // non-cacheable actions
             [
-                'Location' => 'create, update, delete',
-                'Session' => 'create, update, delete',
-                'Speaker' => 'create, update, delete'
+                'Location' => 'list, show, new, create, edit, update, delete',
+                'Session' => 'list, show, new, create, edit, update, delete',
+                'Speaker' => 'list, show, new, create, edit, update, delete'
             ]
         );
 
