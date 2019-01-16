@@ -6,28 +6,36 @@
 
 		<f:flashMessages />
 
-        <div class="form-group">
-            <f:form action="list">
-                <f:form.textfield name="search" placeholder="search" class="form-control" />
-                <button type="button" class="mt-1 btn btn-secondary">Search</button>
-            </f:form>
-        </div>
-
+        <f:form action="list">
+            <div class="row">
+                <div class="input-group col-12">
+                    <f:form.textfield name="search" placeholder="search" class="form-control" />
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </f:form>
 
         <f:if condition="{search}">
-            <div class="card p-1 bg-info">
-                Here are your results for searching "{search}"...
+            <div class="card bg-light mt-3">
+                <div class="card-body">
+                    Results of searching for <b>{search}</b>...
+                </div>
             </div>
         </f:if>
 
 		<table class="table table-hover" >
-			<tr>
-				<th><f:translate key="tx_bootstrapapp_domain_model_location.title" /></th>
-				<th><f:translate key="tx_bootstrapapp_domain_model_location.max_participants" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
+            <thead>
+                <tr>
+                    <th scope="col"><f:translate key="tx_bootstrapapp_domain_model_location.title" /></th>
+                    <th scope="col"><f:translate key="tx_bootstrapapp_domain_model_location.max_participants" /></th>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                </tr>
+            </thead>
 
+            <tbody>
 			<f:for each="{locations}" as="location">
 				<tr>
 					<td><f:link.action action="show" arguments="{location : location}"> {location.title}</f:link.action></td>
@@ -36,6 +44,7 @@
 					<td><f:link.action action="delete" arguments="{location : location}">Delete</f:link.action></td>
 				</tr>
 			</f:for>
+            </tbody>
 		</table>
 
 		<f:link.action action="new">New Location</f:link.action>

@@ -61,19 +61,6 @@ plugin.tx_bootstrapapp._CSS_DEFAULT_STYLE (
         border: 1px #FF0000 solid;
     }
 
-    .tx-bootstrap-app table {
-        border-collapse:separate;
-        border-spacing:10px;
-    }
-
-    .tx-bootstrap-app table th {
-        font-weight:bold;
-    }
-
-    .tx-bootstrap-app table td {
-        vertical-align:top;
-    }
-
     .typo3-messages .message-error {
         color:red;
     }
